@@ -114,7 +114,7 @@ function checkMatch() {
         if (currentLevel === "hard") {
           // Si terminamos el nivel difícil, mostramos el puntaje final y la opción de ir a la página de ranking
           alert(`¡Juego Completado! Puntaje Final: ${score}`);
-          window.location.href = "./pages/ranking.html"; // Redirigir a la página de ranking
+          window.location.href = "./ranking.html"; // Redirigir a la página de ranking
         } else {
           document.getElementById("nextLevelBtn").classList.remove("hidden");
         }

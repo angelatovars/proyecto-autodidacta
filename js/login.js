@@ -24,7 +24,7 @@ document.querySelector("#loginForm").addEventListener("submit", async (e) => {
       localStorage.setItem("correoUsuario", correo);
 
       // Redirigir a la página de perfil
-      window.location.href = "./pages/index.html"; // Cambia esto a la página de perfil
+      window.location.href = "./index.html"; // Cambia esto a la página de perfil
     } else {
       const errorData = await response.json();
       alert(errorData.message); // Muestra el mensaje de error

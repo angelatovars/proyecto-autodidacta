@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
     obtenerPerfil(correoUsuario);
   } else {
     // Si no está logueado, redirigir al login
-    window.location.href = "./pages/login.html";
+    window.location.href = "./login.html";
   }
 
   // Mostrar formulario de actualización
