@@ -390,7 +390,7 @@ function volverAlMenu(event) {
     visitado.push("sopa_letras");
     localStorage.setItem("visitado", JSON.stringify(visitado));
   }
-  window.location.href = "../index.html";
+  window.location.href = "./index.html";
 }
 
 // Event Listeners

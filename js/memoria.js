@@ -23,14 +23,14 @@ function volverAlMenu(event) {
     visitado.push("memoria");
     localStorage.setItem("visitado", JSON.stringify(visitado));
   }
-  window.location.href = "../index.html";
+  window.location.href = "./index.html";
 }
 
 // Función para inicializar el tablero de juego con un nivel específico
 function initializeGame(level = "easy") {
   currentLevel = level;
   const { pairs, showTime } = levels[currentLevel];
-  let cardIcons = [...icons.slice(0, pairs / 2), ...icons.slice(0, pairs / 2)]; // Selecciona las cartas según el nivel
+  let cardIcons = [..icons.slice(0, pairs / 2), ..icons.slice(0, pairs / 2)]; // Selecciona las cartas según el nivel
 
   cardIcons = shuffleArray(cardIcons); // Mezclamos las cartas
 
@@ -114,7 +114,7 @@ function checkMatch() {
         if (currentLevel === "hard") {
           // Si terminamos el nivel difícil, mostramos el puntaje final y la opción de ir a la página de ranking
           alert(`¡Juego Completado! Puntaje Final: ${score}`);
-          window.location.href = "../pages/ranking.html"; // Redirigir a la página de ranking
+          window.location.href = "./pages/ranking.html"; // Redirigir a la página de ranking
         } else {
           document.getElementById("nextLevelBtn").classList.remove("hidden");
         }

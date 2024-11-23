@@ -285,5 +285,5 @@ function volverAlMenu(event) {
     visitado.push("laberinto");
     localStorage.setItem("visitado", JSON.stringify(visitado));
   }
-  window.location.href = "../index.html";
+  window.location.href = "./index.html";
 }

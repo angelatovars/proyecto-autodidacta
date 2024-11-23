@@ -157,5 +157,5 @@ function volverAlMenu(event) {
     visitado.push("words_game");
     localStorage.setItem("visitado", JSON.stringify(visitado));
   }
-  window.location.href = "../index.html";
+  window.location.href = "./index.html";
 }

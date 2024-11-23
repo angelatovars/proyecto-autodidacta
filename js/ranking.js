@@ -11,7 +11,7 @@ function cargarRanking() {
     { nombre: "María", puntaje_total: 170 },
     { nombre: "Pedro", puntaje_total: 210 },
     { nombre: "Lucía", puntaje_total: 190 },
-    { nombre: "Luis", puntaje_total: 200 }
+    { nombre: "Luis", puntaje_total: 200 },
   ];
 
   // Comprobamos que los datos no estén vacíos
@@ -86,5 +86,5 @@ function mostrarRanking(rankingData) {
 }
 
 function volverAlMenu() {
-  window.location.href = "../pages/index.html";
+  window.location.href = "./pages/index.html";
 }

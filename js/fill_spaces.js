@@ -214,5 +214,5 @@ function volverAlMenu(event) {
     visitado.push("fill_spaces");
     localStorage.setItem("visitado", JSON.stringify(visitado));
   }
-  window.location.href = "../index.html";
+  window.location.href = "./index.html";
 }
