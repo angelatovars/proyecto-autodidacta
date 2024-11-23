@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario</title>
+    <link rel="stylesheet" href="/frontend/css/profile.css">
+    <style>
+        #updateForm {
+            display: none;
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        #actualizar_button, #cancelar_button {
+            margin: 10px 5px;
+            padding: 8px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        #cancelar_button {
+            background-color: #f44336;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <h1>Perfil de Usuario</h1>
+        
+        <!-- Información del perfil -->
+        <div class="profile-info">
+            <p><strong>Nombre:</strong> <span id="nombre"></span></p>
+            <p><strong>Correo:</strong> <span id="correo"></span></p>
+            <p><strong>Edad:</strong> <span id="edad"></span></p>
+            <p><strong>Tema Preferido:</strong> <span id="tema_preferido"></span></p>
+            <p><strong>Nivel Preferido:</strong> <span id="nivel_preferido"></span></p>
+        </div>
+        
+        <!-- Botón para mostrar formulario de actualización -->
+        <button type="button" id="mostrar_formulario">Actualizar Perfil</button>
+
+        <!-- Formulario de actualización -->
+        <form id="updateForm">
+            <h2>Actualizar Perfil</h2>
+            <label for="nombre_input">Nombre:</label>
+            <input type="text" id="nombre_input" placeholder="Ingrese su nombre" required>
+            
+            <label for="edad_input">Edad:</label>
+            <input type="number" id="edad_input" placeholder="Ingrese su edad" required>
+            
+            <label for="tema_preferido_input">Tema Preferido:</label>
+            <input type="text" id="tema_preferido_input" placeholder="Ingrese su tema preferido">
+            
+            <label for="nivel_preferido_input">Nivel Preferido:</label>
+            <input type="text" id="nivel_preferido_input" placeholder="Ingrese su nivel preferido">
+            
+            <button type="button" id="actualizar_button">Guardar Cambios</button>
+            <button type="button" id="cancelar_button">Cancelar</button>
+        </form>
+
+        <a href="index.html">
+            <button type="button" id="menu">Ir al Menú</button>
+        </a>
+    </div>
+    <script src="/frontend/js/profile.js"></script>
+</body>
+</html>

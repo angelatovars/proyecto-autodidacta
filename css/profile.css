@@ -1,0 +1,92 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Fondo general */
+  body {
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Contenedor principal del perfil */
+  .profile-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  /* Título principal */
+  h1 {
+    color: #2d6a4f;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Sección de información del perfil */
+  .profile-info p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .profile-info strong {
+    color: #2d6a4f;
+  }
+  
+  /* Estilo para el formulario */
+  form {
+    margin-top: 30px;
+    display: grid;
+    gap: 15px;
+  }
+  
+  /* Estilo para los inputs del formulario */
+  form input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #2d6a4f;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  form input:focus {
+    outline: none;
+    border-color: #1b5e20;
+    box-shadow: 0 0 5px rgba(27, 94, 32, 0.5);
+  }
+  
+  /* Botón de actualizar */
+  button {
+    padding: 12px;
+    font-size: 1rem;
+    background-color: #2d6a4f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #1b5e20;
+  }
+  
+  /* Estilo para la sección de título del formulario */
+  h2 {
+    margin-top: 40px;
+    color: #2d6a4f;
+    font-size: 1.5rem;
+  }
+  
