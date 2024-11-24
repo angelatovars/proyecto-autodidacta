@@ -288,7 +288,7 @@ function volverAlMenu(event) {
     visitado.push("timed_reading");
     localStorage.setItem("visitado", JSON.stringify(visitado));
   }
-  window.location.href = "./index.html";
+  window.location.href = "../index.html";
 }
 
 // Activar reconocimiento de voz

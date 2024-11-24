@@ -23,7 +23,7 @@ function volverAlMenu(event) {
     visitado.push("memoria");
     localStorage.setItem("visitado", JSON.stringify(visitado));
   }
-  window.location.href = "./index.html";
+  window.location.href = "../index.html";
 }
 
 // Función para inicializar el tablero de juego con un nivel específico
