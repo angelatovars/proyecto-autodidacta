@@ -18,18 +18,21 @@
                 </tr>
             </thead>
             <tbody id="rankingBody">
-            
-                    <tr>
-                        <td>{{id}}</td>
-                        <td>{{post.nombre}}</td>
-                        <td>{{post.correo}}</td>
-                    </tr>
-                
+                <tr>
+                    <td>{{id}}</td>
+                    <td>{{post.nombre}}</td>
+                    <td>{{post.puntaje}}</td>
+                </tr>
             </tbody>
         </table>
         <button class="btn" onclick="volverAlMenu()">Volver al Menú</button>
     </div>
 
     <script src="../js/ranking.js"></script>
+    <script>
+        function volverAlMenu() {
+            window.location.href = '../index.html'; // Cambia la ruta según sea necesario
+        }
+    </script>
 </body>
 </html>
