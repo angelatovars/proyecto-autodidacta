@@ -191,7 +191,7 @@ function guardarJuegoBD() {
     },
     body: JSON.stringify({
       nombre_juego: "Memoria Visual",
-      puntaje: puntaje,
+      puntaje: score,
       puntaje_maximo: 1000,
     }),
   })
