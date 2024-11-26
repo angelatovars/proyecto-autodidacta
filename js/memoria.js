@@ -30,7 +30,7 @@ function volverAlMenu(event) {
 function initializeGame(level = "easy") {
   currentLevel = level;
   const { pairs, showTime } = levels[currentLevel];
-  let cardIcons = [..icons.slice(0, pairs / 2), ..icons.slice(0, pairs / 2)]; // Selecciona las cartas según el nivel
+  let cardIcons = [...icons.slice(0, pairs / 2), ...icons.slice(0, pairs / 2)]; // Selecciona las cartas según el nivel
 
   cardIcons = shuffleArray(cardIcons); // Mezclamos las cartas
 
